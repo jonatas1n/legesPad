@@ -1,0 +1,140 @@
+body{
+    background-color: #edeeed;
+    font-family: sans-serif;
+}
+
+/* Toolbar */
+.toolbar{
+    background-color: #fff;
+    font-family: sans-serif;
+    padding-right: .7em;
+    margin: -10px -10px 5px -10px;
+    position: fixed;
+    width: 100%;
+    text-align: left;
+    z-index: 1;
+    border: 1px solid rgb(210,210,210);
+}
+
+.toolbar-section{
+    display:inline-block;
+}
+
+.toolbar-section button{
+    background-color: #fdfdfd;
+    border: none;
+    border-width: .05em;
+    padding: .35em;
+    outline: none;
+}
+
+.toolbar button:hover{
+    color: #9d9;
+}
+
+.divider{
+    background-color: #ddd;
+    padding: 7px 1px 9px 1px;
+    display:inline-block;
+    margin: 0em .8em 0em .5em;
+}
+
+.logo{
+    margin: 0em 4em 0em .75em;
+    position: inline;
+    font-family: sans-serif;
+}
+
+.mode{
+    padding: .35em;
+    outline: none;
+    display: inline-block;
+    border: 1px solid #ddd;
+    border-radius: 6em;
+    background-color: #4b4;
+}
+
+.mode button{
+    background-color: #4b4;
+    border: none;
+    color: white;
+    outline: none;
+}
+
+/* TextBox */
+.textbox{
+    position: relative;
+    left: 8%;
+    width: 80%;
+    height: 75em;
+    padding: 1rem 2rem 1rem 2rem;
+
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(40,40,40,10);
+
+    font-size: 1.25em;
+    font-family: Arial;
+}
+
+.title{
+    outline: none;
+    text-align: center;
+    font-size: 1.25em;
+    font-weight: 600;
+}
+
+.ementa{
+    outline: none;
+    text-align: right;
+    font-size: .75em;
+    width: 50%;
+    position: relative;
+    left: 50%;
+}
+
+.titulo{
+    outline: none;
+    text-align: center;
+}
+
+.subtitulo{
+    outline: none;
+    text-align: center;
+    font-size: 0.75em;
+}
+
+.artigo{
+    outline: none;
+    font-size: 0.75em;
+}
+
+.artigo:hover, .subtitulo:hover, .titulo:hover, .ementa:hover, .title:hover{
+    background-color: #ded;
+}
+
+.add-cap{
+    font-size: 1em;
+    font-weight: 700;
+    color: #393;
+    position: inline;
+    
+    outline: none;
+    border: none;
+}
+
+.nullspace-1{
+    height: 4.5em;
+}
+
+.nullspace-2{
+    height: 2em;
+}
+
+.nullspace-3{
+    height: 1.5em;
+}
+
+.nullspace-4{
+    height: 1em;
+}

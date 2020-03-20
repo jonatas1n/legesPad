@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+    <head>
+        <title>LegesPad</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    </head>
+    <body>
+        <!-- Barra de ferramentas -->
+        <div class="toolbar">
+            <!-- Seção da barra com a logo -->
+            <div class="toolbar-section logo">
+                <h3>LegesPad</h3>
+            </div>
+            <!-- Seção da barra com opções de impressão e exportação -->
+            <div class="toolbar-section print">
+                <button
+                class="fas btn fa-print"></button>
+                <button class="fas btn fa-share"></button>
+            </div>
+            <div class="divider"></div>
+            <!-- Seção da barra com botões de correção -->
+            <div class="toolbar-section undo">
+                <button class="fas btn fa-redo" style="transform: rotateY(3.142rad);"></button>
+                <button class="fas btn fa-redo"></button>
+            </div>
+            <div class="divider"></div>
+            <!-- Seção da barra com opções de visualização -->
+            <div class="toolbar-section zoom">
+                <select name="Zoom">
+                    <option value="100">100%</option>
+                    <option value="75">75%</option>
+                    <option value="50">50%</option>
+                    <option value="25">25%</option>
+                </select>
+            </div>
+            <div class="divider"></div>
+            <!-- Seção da barra com opções de personalização de texto -->
+            <div class="toolbar-section text-options">
+                <button class="fas btn fa-bold"
+                data-command='bold'></button>
+                <button class="fas btn fa-italic"
+                data-command="italic"></button>
+                <button class="fas btn fa-underline"
+                data-command="underline"></button>
+            </div>
+            <div class="divider"></div>
+            <div class="toolbar-section">
+                <button class="add-cap btn">+ Capítulo</button>
+            </div>
+            <div class="divider"></div>
+            <!-- Seção da barra com o botão para alterar o modo de uso -->
+            <div class="mode">
+                <button class="fas btn fa-pencil-alt">   Modo Edição</button>
+            </div>
+        </div>
+
+        <div class="nullspace-1"></div>
+        
+        <div class="textbox">
+            <div class="nullspace-2"></div>
+            <div class="box title" contenteditable="true">
+                Título do texto todo
+            </div>
+            <div class="nullspace-3"></div>
+            <div class="box ementa" contenteditable="true">
+                Dispõe sobre a elaboração, a redação, a alteração e a consolidação das leis, conforme determina o parágrafo único do art. 59 da Constituição Federal, e estabelece normas para a consolidação dos atos normativos que menciona.
+            </div>
+            <div class="nullspace-3"></div>
+            <div class="box capitulo">
+                <div class="titulo" contenteditable="true">Capítulo 1</div>
+                <div class="nullspace-4"></div>
+                <div class="subtitulo" contenteditable="true">DISPOSIÇÕES PRELIMINARES</div>
+                <div class="nullspace-4"></div>
+                <div class="corpo">
+                    <div class="artigo" contenteditable="true">
+                        Art. 1º Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo molestiae est, eius modi corrupti consectetur repudiandae! Necessitatibus reprehenderit incidunt eum repellendus et at ullam illo assumenda quis, dignissimos nemo.
+                    </div>
+                </div>
+                <div class="nullspace-2"></div>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
