@@ -40,7 +40,7 @@ body{
 }
 
 .logo{
-    margin: 0em 4em 0em .75em;
+    margin: 0em 4em 0em 1em;
     position: inline;
     font-family: sans-serif;
 }
@@ -82,6 +82,7 @@ body{
     text-align: center;
     font-size: 1.25em;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 .ementa{
@@ -93,9 +94,14 @@ body{
     left: 50%;
 }
 
+.author{
+    outline:none;
+}
+
 .titulo{
     outline: none;
     text-align: center;
+    text-transform: uppercase;
 }
 
 .subtitulo{
@@ -110,7 +116,8 @@ body{
 }
 
 .artigo:hover, .subtitulo:hover, .titulo:hover, .ementa:hover, .title:hover{
-    background-color: #ded;
+    background-color: #e3ffe352;
+    border-radius: 5px;
 }
 
 .add-cap{
