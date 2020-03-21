@@ -42,8 +42,11 @@
                 data-command="italic"></button>
             </div>
             <div class="divider"></div>
-            <div class="toolbar-section">
-                <button class="add-cap btn">+ Capítulo</button>
+            <div class="toolbar-section indent">
+                <button class="fas btn fa-outdent"
+                data-command="outdent"></button>
+                <button class="fas btn fa-indent"
+                data-command="indent"></button>
             </div>
             <div class="divider"></div>
             <!-- Seção da barra com o botão para alterar o modo de uso -->
@@ -53,35 +56,75 @@
         </div>
 
         <div class="nullspace-1"></div>
+
         <!-- Seção com a parte editável do texto -->
         <div class="textbox">
-            <div class="nullspace-2"></div>
             <!-- Seção com a Epígrafe -->
-            <div class="box title" contenteditable="true">
-                Insira o título aqui
+            <div class="preliminar" contenteditable="true">
+                <div class="epigrafe">
+                    LEI COMPLEMENTAR Nº 13, DE 03 DE SETEMBRO DE 1996
+                </div>
+                <!-- Seção com a Ementa -->
+                <div class="ementa">	
+                    Regulamenta o art. 69 da Lei Orgânica, dispondo sobre a elaboração, redação, alteração e consolidação das leis do Distrito Federal.
+                </div>
+                <!-- Seção com o preambulo -->
+                <div class="autoria">O GOVERNO DO DISTRITO FEDERAL, FAÇO SABER QUE A CÂMARA LEGISLATIVA DO DISTRITO FEDERAL DECRETA E EU SANCIONO A SEGUINTE LEI COMPLEMENTAR:
+
+                </div>
+                <div class="promulgacao"></div>
+                <!-- Seção com a divisão do capítulo -->
+                <!-- <div class="enunciado"></div>
+                <div class="indicacao"></div> -->
             </div>
-            <div class="nullspace-3"></div>
-            <!-- Seção com a Ementa -->
-            <div class="box ementa" contenteditable="true">
-                Dispõe sobre a elaboração, a redação, a alteração e a consolidação das leis, conforme determina o parágrafo único do art. 59 da Constituição Federal, e estabelece normas para a consolidação dos atos normativos que menciona.
-            </div>
-            <div class="nullspace-3"></div>
-            <div class="author" contenteditable="true">Do Sr. Deputado Hermenegildo Pereira,</div>
-            <div class="nullspace-3"></div>
-            <!-- Seção com a divisão do capítulo -->
-            <div class="box capitulo">
-                <!-- seção com título do capítulo -->
-                <div class="titulo" contenteditable="true">Capítulo 1</div>
-                <div class="nullspace-4"></div>
-                <!-- Seção com o subtítulo -->
-                <div class="subtitulo" contenteditable="true">DISPOSIÇÕES PRELIMINARES</div>
-                <div class="nullspace-4"></div>
-                <div class="corpo">
-                    <div class="artigo" contenteditable="true">
-                        Art. 1º Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia quo molestiae est, eius modi corrupti consectetur repudiandae! Necessitatibus reprehenderit incidunt eum repellendus et at ullam illo assumenda quis, dignissimos nemo.
+
+            <div class="normativa"contenteditable="true">
+                <div class="capitulo" contenteditable="false">
+                    <!-- seção com título do capítulo -->
+                    <div class="titulo" contenteditable="false">Capítulo 1</div>
+                    <!-- Seção com o subtítulo -->
+                    <div class="subtitulo">DISPOSIÇÕES PRELIMINARES</div>
+                    <div class="corpo">
+                        <div class="artigo" contenteditable="false">
+                            <div class="abrev-artigo" contenteditable="false"></div>
+                            <div class="corpo-artigo" contenteditable="true">A elaboração, redação, alteração e consolidação das leis do Distrito Federal, sujeitas ao processo legislativo, regem-se por esta Lei Complementar, nos termos do que dispõe o art. 69, parágrafo único, da Lei Orgânica.</div>
+                        </div>
+                        <div class="artigo" contenteditable="false">
+                            <div class="abrev-artigo" contenteditable="false"></div>
+                            <div class="corpo-artigo" contenteditable="true">A elaboração, redação, alteração e consolidação das leis do Distrito Federal, sujeitas ao processo legislativo, regem-se por esta Lei Complementar, nos termos do que dispõe o art. 69, parágrafo único, da Lei Orgânica.</div>
+                        </div>
+                        <div class="paragrafo">
+                            <div class="abrev-paragrafo" contenteditable="false">
+                                <!-- §x(ordinal até o nove, depois cardinal) ou Parágrafo único -->
+                            </div>
+                            <div class="corpo-paragrafo"></div>
+                        </div>
+                        <div class="inciso">
+                            <div class="abrev-inciso"contenteditable="false">
+                                <!-- Representados por algarismos romanos -->
+                            </div>
+                            <div class="corpo-inciso"></div>
+                        </div>
+                        <div class="alinea">
+                            <div class="abrev-alinea"contenteditable="false">
+                                <!-- Representados por letras minúsculas -->
+                            </div>
+                            <div class="corpo-alinea"></div>
+                        </div>
+                        <div class="item">
+                            <div class="abrev-item"contenteditable="false">
+                                <!-- Representados por algarismos arábicos -->
+                            </div>
+                            <div class="corpo-item"></div>
+                        </div>
                     </div>
                 </div>
-                <div class="nullspace-2"></div>
+            </div>
+            <div class="final" contenteditable="true">
+                <div class="vigencia artigo"></div>
+                <div class="revogacao artigo"></div>
+                <div class="justificacao"></div>
+                <div class="fecho"></div>
             </div>
         </div>
         <script src="app.js"></script>

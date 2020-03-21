@@ -34,9 +34,12 @@ body{
 
 .divider{
     background-color: #ddd;
-    padding: 7px 1px 9px 1px;
+    padding: 1px;
     display:inline-block;
-    margin: 0em .8em 0em .5em;
+    position: relative;
+    top: 5.5px;
+    height: 1em;
+    margin: 0em .8em .1em .5em;
 }
 
 .logo{
@@ -49,9 +52,11 @@ body{
     padding: .35em;
     outline: none;
     display: inline-block;
+    position: relative;
     border: 1px solid #ddd;
     border-radius: 6em;
     background-color: #4b4;
+    text-align: right;
 }
 
 .mode button{
@@ -59,75 +64,104 @@ body{
     border: none;
     color: white;
     outline: none;
+    display: inline-block;
+    position: relative;
 }
 
 /* TextBox */
 .textbox{
     position: relative;
-    left: 8%;
-    width: 80%;
-    height: 75em;
-    padding: 1rem 2rem 1rem 2rem;
+    width: 21cm;
+    height: 29.7cm;
+    padding: 4cm 2cm 2cm 3cm;
+    text-align: justify;
+    margin: auto;
 
     background-color: #fff;
     outline: none;
     box-shadow: 0 10px 20px rgba(40,40,40,10);
 
-    font-size: 1.25em;
-    font-family: Arial;
+    font-size: 12pt;
+    font-family: Tahoma;
 }
 
-.title{
+.preliminar{
+    outline: none;
+    text-align: right;
+}
+
+.normativa{
+    outline: none;
+}
+
+.epigrafe{
     outline: none;
     text-align: center;
-    font-size: 1.25em;
     font-weight: 600;
     text-transform: uppercase;
+    margin-bottom: 18pt;
 }
 
 .ementa{
     outline: none;
     text-align: right;
-    font-size: .75em;
-    width: 50%;
-    position: relative;
-    left: 50%;
+    font-size: 10pt;
+    display: inline-block;
+    width: 12cm;
+    margin-bottom: 18pt;
 }
 
-.author{
+.autoria{
     outline:none;
+    margin-bottom: 18pt;
+    text-align: left;
+}
+
+.capitulo{
+    /* margin-left: 1.5cm; */
+    outline: none;
 }
 
 .titulo{
     outline: none;
     text-align: center;
     text-transform: uppercase;
+    margin-bottom: 6pt;
+    font-weight: 700;
 }
 
 .subtitulo{
     outline: none;
     text-align: center;
-    font-size: 0.75em;
+    font-size: 12pt;
+    margin-bottom: 18pt;
 }
 
 .artigo{
     outline: none;
-    font-size: 0.75em;
+    font-size: 1em;
+    margin-bottom: 6pt;
+    display: flex;
 }
 
-.artigo:hover, .subtitulo:hover, .titulo:hover, .ementa:hover, .title:hover{
+.abrev-artigo{
+    width: auto;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 700;
+    outline: none;
+    display: flex;
+}
+
+.corpo-artigo{
+    display:inline-block;
+    position: relative;
+    outline: none;
+}
+
+.artigo:hover, .subtitulo:hover, .autoria:hover, .ementa:hover, .epigrafe:hover{
     background-color: #e3ffe352;
     border-radius: 5px;
-}
-
-.add-cap{
-    font-size: 1em;
-    font-weight: 700;
-    color: #393;
-    position: inline;
-    
-    outline: none;
-    border: none;
 }
 
 .nullspace-1{
