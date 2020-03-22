@@ -85,6 +85,15 @@ body{
     font-family: Tahoma;
 }
 
+ul{
+    padding: 0;
+    display: inline;
+}
+
+li{
+    display: inline;
+}
+
 .preliminar{
     outline: none;
     text-align: right;
@@ -140,24 +149,23 @@ body{
 .artigo{
     outline: none;
     font-size: 1em;
-    margin-bottom: 6pt;
-    display: flex;
+    margin-bottom: 18pt;
+    display: inline-block;
 }
 
 .abrev-artigo{
     width: auto;
     position: relative;
-    text-transform: uppercase;
     font-weight: 700;
     outline: none;
-    display: flex;
+    display: inline;
 }
 
-.corpo-artigo{
+.conteudo{
     display:inline-block;
     position: relative;
     outline: none;
-}
+} 
 
 .artigo:hover, .subtitulo:hover, .autoria:hover, .ementa:hover, .epigrafe:hover{
     background-color: #e3ffe352;
