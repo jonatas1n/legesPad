@@ -10,10 +10,20 @@ body{
     padding-right: .7em;
     margin: -10px -10px 5px -10px;
     position: fixed;
+    display: inline-block;
     width: 100%;
-    text-align: left;
     z-index: 1;
     border: 1px solid rgb(210,210,210);
+}
+
+.toolbar:not(#logo){
+    text-align: center;
+}
+
+.bar{
+    position: relative;
+    align-content: center;
+    display: inline-block;
 }
 
 .toolbar-section{
@@ -42,7 +52,7 @@ body{
     margin: 0em .8em .1em .5em;
 }
 
-.logo{
+#logo{
     margin: 0em 4em 0em 1em;
     position: inline;
     font-family: sans-serif;
@@ -83,15 +93,6 @@ body{
 
     font-size: 12pt;
     font-family: Tahoma;
-}
-
-ul{
-    padding: 0;
-    display: inline;
-}
-
-li{
-    display: inline;
 }
 
 .preliminar{
@@ -144,13 +145,6 @@ li{
     text-align: center;
     font-size: 12pt;
     margin-bottom: 18pt;
-}
-
-.artigo{
-    outline: none;
-    font-size: 1em;
-    margin-bottom: 18pt;
-    display: inline-block;
 }
 
 .abrev-artigo{

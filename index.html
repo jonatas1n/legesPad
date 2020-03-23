@@ -8,50 +8,57 @@
         <!-- Barra de ferramentas -->
         <div class="toolbar">
             <!-- Seção da barra com a logo -->
-            <div class="toolbar-section logo">
+            <div class="toolbar-section" id="logo">
                 <h3>LegisPad</h3>
             </div>
             <!-- Seção da barra com opções de impressão e exportação -->
-            <div class="toolbar-section print">
-                <button
-                class="fas btn fa-print"></button>
-                <button class="fas btn fa-share"></button>
-            </div>
-            <div class="divider"></div>
-            <!-- Seção da barra com botões de correção -->
-            <div class="toolbar-section undo">
-                <button class="fas btn fa-redo" style="transform: rotateY(3.142rad);"></button>
-                <button class="fas btn fa-redo"></button>
-            </div>
-            <div class="divider"></div>
-            <!-- Seção da barra com opções de visualização -->
-            <div class="toolbar-section zoom">
-                <select name="Zoom">
-                    <option value="100">100%</option>
-                    <option value="75">75%</option>
-                    <option value="50">50%</option>
-                    <option value="25">25%</option>
-                </select>
-            </div>
-            <div class="divider"></div>
-            <!-- Seção da barra com opções de personalização de texto -->
-            <div class="toolbar-section text-options">
-                <button class="fas btn fa-bold"
-                data-command='bold'></button>
-                <button class="fas btn fa-italic"
-                data-command="italic"></button>
-            </div>
-            <div class="divider"></div>
-            <div class="toolbar-section indent">
-                <button class="fas btn fa-outdent"
-                data-command="outdent"></button>
-                <button class="fas btn fa-indent"
-                data-command="indent"></button>
-            </div>
-            <div class="divider"></div>
-            <!-- Seção da barra com o botão para alterar o modo de uso -->
-            <div class="mode">
-                <button class="fas btn fa-pencil-alt">   Modo Edição</button>
+            <div class="bar">
+                <div class="toolbar-section" id="print">
+                    <button
+                    class="fas btn fa-print"></button>
+                    <button class="fas btn fa-share"></button>
+                </div>
+                <div class="divider"></div>
+                <!-- Seção da barra com botões de correção -->
+                <div class="toolbar-section" id="undo">
+                    <button class="fas btn fa-redo" style="transform: rotateY(3.142rad);"></button>
+                    <button class="fas btn fa-redo"></button>
+                </div>
+                <div class="divider"></div>
+                <!-- Seção da barra com opções de visualização -->
+                <div class="toolbar-section" id="zoom">
+                    <select name="Zoom">
+                        <option value="100">100%</option>
+                        <option value="75">75%</option>
+                        <option value="50">50%</option>
+                        <option value="25">25%</option>
+                    </select>
+                </div>
+                <div class="divider"></div>
+                <!-- Seção da barra com opções de personalização de texto -->
+                <div class="toolbar-section" id="text-options">
+                    <button class="fas btn fa-bold"
+                    data-command='bold'></button>
+                    <button class="fas btn fa-italic"
+                    data-command="italic"></button>
+                </div>
+                <div class="divider"></div>
+                <div class="toolbar-section" id="indent">
+                    <button class="fas btn fa-outdent"
+                    data-command="outdent"></button>
+                    <button class="fas btn fa-indent"
+                    data-command="indent"></button>
+                </div>
+                <div class="divider"></div>
+                <div class="toolbar-section" id="adicionaCapitulo">
+                    <button class="fas fa-plus-circle"
+                    onclick="adicionaCapitulo()"></button>
+                </div>
+                <div class="divider"></div>
+                <!-- Seção da barra com o botão para alterar o modo de uso -->
+                <div class="mode">
+                    <button class="fas btn fa-pencil-alt">   Modo Edição</button>
+                </div>
             </div>
         </div>
 
@@ -78,16 +85,8 @@
                 <div class="indicacao"></div> -->
             </div>
 
-            <div class="normativa">
-                    <div class="capitulo" contenteditable="false">
-                        <!-- seção com título do capítulo -->
-                        <div class="titulo" contenteditable="false">Capítulo 1</div>
-                        <!-- Seção com o subtítulo -->
-                        <div class="subtitulo">DISPOSIÇÕES PRELIMINARES</div>
-                    </div>
-                    <ul>
-                        <div class="abrev-artigo" contenteditable="false"></div><li contenteditable="true">Primeiro Artigo</li>
-                    </ul>
+            <div class="normativa" contenteditable="true">
+
             </div>
             <!-- <div class="final" contenteditable="true">
                 <div class="vigencia artigo"></div>

@@ -1,53 +1,44 @@
-let capButton = document.getElementsByClassName('add-cap');
-let items = document.getElementsByClassName('artigo');
-// const artigo = new RegExp("Art. [0-9]{1,}o");
+let parser = new DOMParser();
+normativa = document.getElementsByClassName("normativa")[0];
+// let capitulo = parser.parseFromString("capitulo.html", "text/html");
 
-capButton = capButton[0];
+// Checa a inexistência de capitulos. Caso positivo, cria um novo.
 
-let capitulo = document.createElement('div');
-capitulo.classList.add('capitulo');
-capitulo.contentEditable = "false";
-
+let divCapitulo = document.createElement('div');
+divCapitulo.classList.add('capitulo');
 let titulo = document.createElement('div');
 titulo.classList.add('titulo');
-titulo.contentEditable = "false";
-
 let subtitulo = document.createElement('div');
 subtitulo.classList.add('subtitulo');
 subtitulo.innerHTML = "DISPOSIÇÕES PRELIMINARES";
-
-capitulo.appendChild(titulo);
-capitulo.appendChild(subtitulo);
+divCapitulo.appendChild(titulo);
+divCapitulo.appendChild(subtitulo);
 
 if (document.getElementsByClassName('capitulo').length == 0){
-    document.getElementsByClassName('corpo')[0].appendChild(capitulo);
+    normativa.appendChild(divCapitulo);
 }
 
+let artigo = document.getElementsByClassName('artigo');
+if(artigo.length == 0){
+    let divAbrev = document.createElement('div');
+    divAbrev.contentEditable = 'false';
+    divAbrev.classList.add('abrev-artigo');
+    let divbase = document.createElement('div');
+    divbase.innerHTML = "Escreva seu artigo";
+    divbase.classList.add('artigo');
+    divbase.appendChild(divAbrev);
+    divbase.prepend(divAbrev);
+    
+    normativa.appendChild(divbase);
+}
+
+// Ajusta a enumeração dos capítulos
 let titulos = document.getElementsByClassName('titulo')
 for (let i = 0; i < titulos.length; i++){
     titulos[i].innerHTML = "Capitulo " + titulos.length;
 }
 
-let divBaseAbrev = document.createElement('div');
-// divBaseAbrev.classList.add('abrev-artigo');
-// divBaseAbrev.contentEditable = "false";
-
-let divBaseConteudo = document.createElement('div');
-divBaseConteudo.classList.add('conteudo');
-divBaseConteudo.contentEditable = "true";
-// divBaseConteudo.innerHTML = "Primeiro parágrafo";
-
-let li = document.getElementsByTagName('li');
-for(let i = 0; i < li.length; i++){
-    if(li[i].classList.length == 0){
-        // li[i].classList.add('artigo');
-        li.contentEditable = "true"
-        li.value="Primeiro parágrafo";
-        li[i].appendChild(divBaseAbrev);
-        li[i].appendChild(divBaseConteudo);
-    }
-}
-
+// Adiciona as abreviações corretas nas divs
 let abrevArtigo = document.getElementsByClassName("abrev-artigo");
 
 for (let i = 0; i < abrevArtigo.length; i++){
@@ -58,3 +49,10 @@ for (let i = 0; i < abrevArtigo.length; i++){
     }
 }
 
+
+// Analisar função
+
+// let normativa = document.getElementsByClassName('normativa')[0];
+// function adicionaCapitulo(){
+//     normativa.appendChild();
+// }
