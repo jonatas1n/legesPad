@@ -1,5 +1,4 @@
 // Adiciona as abreviações corretas nas divs
-
 let abrevArtigo = document.getElementsByClassName("abrev-artigo");
 
 for (let i = 0; i < abrevArtigo.length; i++){

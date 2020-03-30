@@ -1,0 +1,87 @@
+/* TextBox */
+.textbox{
+    position: relative;
+    width: 21cm;
+    height: 29.7cm;
+    padding: 4cm 2cm 2cm 3cm;
+    /* text-align: justify; */
+    margin: auto;
+
+    background-color: #fff;
+    outline: none;
+    box-shadow: 0 10px 20px rgba(40,40,40,10);
+
+    font-size: 12pt;
+    font-family: Tahoma;
+}
+
+.preliminar{
+    outline: none;
+    text-align: right;
+}
+
+.normativa, .capitulo{
+    outline: none;
+}
+
+.epigrafe{
+    outline: none;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 18pt;
+}
+
+.ementa{
+    outline: none;
+    text-align: right;
+    font-size: 10pt;
+    display: inline-block;
+    width: 12cm;
+    margin-bottom: 18pt;
+}
+
+.autoria{
+    outline:none;
+    margin-bottom: 18pt;
+    text-align: left;
+}
+
+.titulo{
+    outline: none;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 6pt;
+    font-weight: 700;
+}
+
+.subtitulo{
+    outline: none;
+    text-align: center;
+    font-size: 12pt;
+    margin-bottom: 18pt;
+}
+
+.abrev-artigo{
+    width: auto;
+    position: relative;
+    font-weight: 700;
+    outline: none;
+    display: inline;
+    text-align: left;
+}
+
+.conteudo{
+    display:inline-block;
+    position: relative;
+    outline: none;
+} 
+
+.artigo:hover, .subtitulo:hover, .autoria:hover, .ementa:hover, .epigrafe:hover{
+    background-color: #e3ffe352;
+    border-radius: 5px;
+}
+
+.nullspace-1{
+    height: 4.5em;
+}

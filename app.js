@@ -1,6 +1,4 @@
-let parser = new DOMParser();
 normativa = document.getElementsByClassName("normativa")[0];
-let capitulo = parser.parseFromString("capitulo.html", "text/html");
 
 // Checa a inexistência de capitulos. Caso positivo, cria um novo.
 let divCapitulo = document.createElement('div');
@@ -33,3 +31,12 @@ if(artigo.length == 0){
 
     normativa.appendChild(divbase);
 }
+
+const config = { attributes: true, childList: true, subtree: true};
+
+const callback = function(mutationsList, observer) {
+};
+
+const observer = new MutationObserver(callback);
+
+observer.observe(normativa, config);
